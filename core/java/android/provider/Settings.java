@@ -6487,6 +6487,21 @@ public final class Settings {
         public static final String VIBRATE_ON_DISCONNECT = "vibrate_on_disconnect";
 
         /**
+         * Three Finger Gesture from Oppo
+         * @hide
+         */
+        @Readable
+        public static final String THREE_FINGER_GESTURE = "three_finger_gesture";
+
+        /**
+         * Three Finger Gesture - flag for activation
+         * NOT for backup!
+         * @hide
+         */
+        @Readable
+        public static final String THREE_FINGER_GESTURE_ACTIVE = "three_finger_gesture_active";
+
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
