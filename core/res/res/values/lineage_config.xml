@@ -5,8 +5,5 @@
 -->
 <resources>
     <!-- Whether to cancel fingerprint operation if not idle -->
-    <java-symbol type="bool" name="config_fpCancelIfNotIdle" />
-
-    <!-- For dynamic default font styles -->
-    <java-symbol type="string" name="config_bodyFontFamily" />
+    <bool name="config_fpCancelIfNotIdle">false</bool>
 </resources>
