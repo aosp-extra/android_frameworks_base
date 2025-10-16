@@ -160,7 +160,7 @@ constructor(
             createBarrier(
                 R.id.weather_clock_bc_smartspace_bottom,
                 Barrier.BOTTOM,
-                0,
+                getDimen(ENHANCED_SMARTSPACE_HEIGHT),
                 (customR.id.weather_clock_time),
             )
             if (
@@ -208,7 +208,8 @@ constructor(
                         getDimen(ENHANCED_SMARTSPACE_HEIGHT)
                 } else {
                     keyguardClockViewModel.getLargeClockTopMargin() +
-                        getDimen(DATE_WEATHER_VIEW_HEIGHT)
+                        getDimen(DATE_WEATHER_VIEW_HEIGHT) +
+                        getDimen(ENHANCED_SMARTSPACE_HEIGHT)
                 }
             connect(
                 customR.id.lockscreen_clock_view_large,
