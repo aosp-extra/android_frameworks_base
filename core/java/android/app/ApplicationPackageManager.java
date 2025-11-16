@@ -135,8 +135,6 @@ import com.android.internal.os.SomeArgs;
 import com.android.internal.pm.RoSystemFeatures;
 import com.android.internal.util.UserIcons;
 
-import com.android.internal.util.PropImitationHooks;
-
 import com.nvidia.NvAppProfileService;
 
 import dalvik.system.VMRuntime;
@@ -857,8 +855,7 @@ public class ApplicationPackageManager extends PackageManager {
                 return maybeHasSystemFeature;
             }
         }
-        return PropImitationHooks.hasSystemFeature(name,
-                mHasSystemFeatureCache.query(new HasSystemFeatureQuery(name, version)));
+        return mHasSystemFeatureCache.query(new HasSystemFeatureQuery(name, version));
     }
 
     /** @hide */
